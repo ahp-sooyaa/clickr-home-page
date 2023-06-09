@@ -86,6 +86,35 @@
   top: 50px;
 }
 
+.read-more-button {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.read-more-button:hover a {
+  text-decoration: none;
+  color: #e61d1d;
+}
+
+.read-more-button:hover .read-more-button-underline {
+  width: 100%;
+  background-color: #e61d1d;
+}
+
+.read-more-button a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.read-more-button-underline {
+  background-color: #000;
+  height: 2px;
+  width: 100px;
+}
+
 .footer-heading-text {
   color: #fff;
   font-size: 35px;
