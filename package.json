@@ -1,0 +1,20 @@
+{
+  "name": "dbs-mojo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ko Zin Thet",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-sass": "3.0.0"
+  }
+}

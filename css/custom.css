@@ -1,0 +1,186 @@
+.uk-active > a {
+  width: 30px !important;
+  background-color: #000 !important;
+  border-radius: 5px !important;
+}
+
+.navbar-sticky {
+  box-shadow: 0 5px 15px #1f131314;
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.contact-button {
+  border: 1px solid #000;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 15px 25px 15px 25px;
+  background-color: #fff;
+}
+
+.cta-button {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.cta-button:hover a {
+  text-decoration: none;
+  color: #e61d1d;
+}
+
+.cta-button:hover .cta-button-underline {
+  width: 100%;
+  background-color: #e61d1d;
+}
+
+.cta-button a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.cta-button-underline {
+  background-color: #000;
+  display: inline-block;
+  height: 2px;
+  width: 100px;
+}
+
+.hero-image {
+  position: relative;
+  width: 70%;
+  height: 460px;
+  overflow: hidden;
+}
+
+.hero-image-home-banner {
+  position: absolute;
+  left: 200px;
+  width: 1049.34px;
+  height: calc(417.59px + 125px);
+}
+
+.hero-image-front-hand {
+  position: absolute;
+  width: 150px;
+  left: 50%;
+  bottom: -30px;
+}
+
+.hero-image-front-elements {
+  position: absolute;
+  width: 60%;
+  left: 200px;
+}
+
+.hero-image-rear-elements {
+  position: absolute;
+  width: 60%;
+  left: 200px;
+  top: 50px;
+}
+
+.footer-heading-text {
+  color: #fff;
+  font-size: 35px;
+}
+
+.footer-let-connect {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.footer-let-connect a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.footer-let-connect a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-let-connect-underline {
+  background-color: #fff;
+  display: inline-block;
+  height: 2px;
+  width: 100px;
+}
+
+.footer-let-connect:hover .footer-let-connect-underline {
+  width: 100%;
+}
+
+.footer-menu-explore h1,
+.footer-menu-contact-us h1,
+.footer-stay-in-know h1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-menu-explore li {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.footer-menu-contact-us {
+  color: #fff;
+}
+
+.footer-menu-contact-us a {
+  color: #fff;
+}
+
+.footer-menu-contact-us a:hover {
+  color: #c4c0c0;
+  text-decoration: none;
+}
+
+.footer-stay-in-know-email {
+  width: 460px;
+  position: relative;
+}
+
+.footer-stay-in-know input {
+  background-color: #262523;
+  border-width: 0 0 2px 0;
+  border-color: #fff;
+  padding: 20px 0 15px 0;
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+}
+
+.footer-stay-in-know input:focus {
+  outline: none;
+}
+
+.footer-stay-in-know input::placeholder {
+  color: #fff;
+}
+
+.footer-stay-in-know-email div {
+  display: inline-flex;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  right: 0;
+}

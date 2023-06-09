@@ -1,0 +1,158 @@
+.uk-active > a
+    width: 30px !important
+    background-color: #000 !important
+    border-radius: 5px !important
+
+.navbar-sticky
+    box-shadow: 0 5px 15px #1f131314
+    background-color: rgba(255, 255, 255, 0.98) !important
+    position: sticky
+    top: 0
+    z-index: 50
+
+.contact-button
+    border: 1px solid #000;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 15px 25px 15px 25px;
+    background-color: #fff;
+
+.cta-button
+    display: inline-flex
+    flex-direction: column
+    margin-top: 70px
+    margin-bottom: 20px
+
+    &:hover a, 
+        text-decoration: none
+        color: #e61d1d
+    
+    &:hover &-underline
+        width: 100%
+        background-color: #e61d1d
+
+    & a
+        color: #000
+        text-transform: uppercase
+        font-weight: bold
+        letter-spacing: 2px
+        margin-bottom: 5px
+
+    &-underline
+        background-color: #000
+        display: inline-block
+        height: 2px
+        width: 100px
+
+.hero-image
+    position: relative
+    width: 70%
+    height: 460px
+    overflow: hidden
+
+    &-home-banner
+        position: absolute
+        left: 200px
+        width: (924.34px + 125px)
+        height: calc(417.59px + 125px)
+
+    &-front-hand
+        position: absolute
+        width: 150px
+        left: 50%
+        bottom: -30px
+
+    &-front-elements
+        position: absolute 
+        width: 60% 
+        left: 200px
+
+    &-rear-elements
+        position: absolute
+        width: 60%
+        left: 200px
+        top: 50px
+
+.footer
+    &-heading-text
+        color: #fff
+        font-size: 35px
+
+    &-let-connect
+        display: inline-flex
+        flex-direction: column
+
+    &-let-connect a
+        color: #fff
+        text-transform: uppercase
+        font-weight: bold
+        letter-spacing: 2px
+        margin-bottom: 5px
+
+        &:hover
+            color: #fff
+            text-decoration: none
+
+    &-let-connect-underline
+        background-color: #fff
+        display: inline-block
+        height: 2px
+        width: 100px
+
+    &-let-connect:hover &-let-connect-underline
+        width: 100%
+
+    &-menu-explore h1, 
+    &-menu-contact-us h1,
+    &-stay-in-know h1
+        font-size: 16px
+        text-transform: uppercase
+        font-weight: bold
+        color: #fff
+        margin-bottom: 15px
+
+    &-menu-explore li
+        color: #fff
+        text-transform: capitalize
+
+    &-menu-contact-us
+        color: #fff
+    
+    &-menu-contact-us a
+        color: #fff
+
+        &:hover
+            color: #c4c0c0
+            text-decoration: none
+
+    &-stay-in-know-email
+        width: 460px;
+        position: relative
+
+    &-stay-in-know input
+        background-color: #262523
+        border-width: 0 0 2px 0;
+        border-color: #fff
+        padding: 20px 0 15px 0
+        font-size: 16px;
+        color: #fff
+        width: 100%
+
+        &:focus
+            outline: none
+
+        &::placeholder
+            color: #fff; 
+    
+    &-stay-in-know-email div
+        display: inline-flex
+        background-color: transparent
+        border: 1px solid #fff
+        border-radius: 100%
+        width: 30px
+        height: 30px
+        justify-content: center
+        align-items: center
+        color: #fff
+        position: absolute
+        right: 0
