@@ -1,7 +1,9 @@
-.uk-active > a {
-  width: 30px !important;
-  background-color: #000 !important;
-  border-radius: 5px !important;
+section {
+  padding: 40px 0 40px 0;
+}
+
+.uk-navbar-nav {
+  display: none !important;
 }
 
 .navbar-sticky {
@@ -18,6 +20,7 @@
   font-size: 14px;
   padding: 15px 25px 15px 25px;
   background-color: #fff;
+  display: none;
 }
 
 .cta-button {
@@ -53,71 +56,56 @@
 }
 
 .hero-image {
+  display: none;
+}
+
+.hero-image-mobile {
   position: relative;
-  width: 70%;
-  height: 460px;
+  width: 100%;
+  height: 260px;
   overflow: hidden;
 }
 
-.hero-image-home-banner {
+.hero-image-mobile-home-banner {
   position: absolute;
-  left: 200px;
+  left: 60px;
   width: 1049.34px;
-  height: calc(417.59px + 125px);
+  height: calc(217.59px + 125px);
 }
 
-.hero-image-front-hand {
+.hero-image-mobile-front-hand {
   position: absolute;
-  width: 150px;
+  width: 100px;
   left: 50%;
-  bottom: -30px;
+  bottom: 0px;
+  margin-left: -30px;
 }
 
-.hero-image-front-elements {
+.hero-image-mobile-front-elements {
   position: absolute;
-  width: 60%;
-  left: 200px;
+  width: 100%;
 }
 
-.hero-image-rear-elements {
+.hero-image-mobile-rear-elements {
   position: absolute;
-  width: 60%;
-  left: 200px;
+  width: 100%;
   top: 50px;
 }
 
-.read-more-button {
-  display: inline-flex;
+.featured-engagement-head-section {
+  display: flex;
   flex-direction: column;
 }
 
-.read-more-button:hover a {
-  text-decoration: none;
-  color: #e61d1d;
-}
-
-.read-more-button:hover .read-more-button-underline {
-  width: 100%;
-  background-color: #e61d1d;
-}
-
-.read-more-button a {
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 5px;
-}
-
-.read-more-button-underline {
-  background-color: #000;
-  height: 2px;
-  width: 100px;
+.blog-first-post,
+.footer-section {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-heading-text {
   color: #fff;
-  font-size: 35px;
+  font-size: 21px;
 }
 
 .footer-let-connect {
@@ -127,6 +115,7 @@
 
 .footer-let-connect a {
   color: #fff;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
@@ -149,9 +138,9 @@
   width: 100%;
 }
 
-.footer-menu-explore h1,
-.footer-menu-contact-us h1,
-.footer-stay-in-know h1 {
+.footer-menu-explore h4,
+.footer-menu-contact-us h4,
+.footer-stay-in-know h4 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
@@ -178,7 +167,7 @@
 }
 
 .footer-stay-in-know-email {
-  width: 460px;
+  width: 100%;
   position: relative;
 }
 
@@ -212,4 +201,102 @@
   color: #fff;
   position: absolute;
   right: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    padding: 50px 0 50px 0;
+  }
+  .uk-active > a {
+    width: 30px !important;
+    background-color: #000 !important;
+    border-radius: 5px !important;
+  }
+  .uk-navbar-nav {
+    display: block;
+  }
+  .contact-button {
+    display: block;
+  }
+  .hero-section {
+    padding: 30px;
+  }
+  .hero-image {
+    display: block;
+  }
+  .hero-section-left {
+    width: 30%;
+  }
+  .hero-section-left > h1 {
+    font-size: 60px;
+  }
+  .hero-image {
+    position: relative;
+    width: 70%;
+    height: 460px;
+    overflow: hidden;
+  }
+  .hero-image-home-banner {
+    position: absolute;
+    left: 200px;
+    width: 1049.34px;
+    height: calc(417.59px + 125px);
+  }
+  .hero-image-front-hand {
+    position: absolute;
+    width: 150px;
+    left: 50%;
+    bottom: -30px;
+  }
+  .hero-image-front-elements {
+    position: absolute;
+    width: 60%;
+    left: 200px;
+  }
+  .hero-image-rear-elements {
+    position: absolute;
+    width: 60%;
+    left: 200px;
+    top: 50px;
+  }
+  .read-more-button {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .read-more-button:hover a {
+    text-decoration: none;
+    color: #e61d1d;
+  }
+  .read-more-button:hover .read-more-button-underline {
+    width: 100%;
+    background-color: #e61d1d;
+  }
+  .read-more-button a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+  .read-more-button-underline {
+    background-color: #000;
+    height: 2px;
+    width: 100px;
+  }
+  .featured-engagement-head-section {
+    flex-direction: row;
+  }
+  .blog-first-post {
+    flex-direction: row;
+    height: 350px;
+  }
+  .footer-section {
+    flex-direction: row;
+  }
+  .footer-heading-text {
+    font-size: 35px;
+  }
+  .footer-stay-in-know-email {
+    width: 460px;
+  }
 }

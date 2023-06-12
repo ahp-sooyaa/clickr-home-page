@@ -1,7 +1,8 @@
-.uk-active > a
-    width: 30px !important
-    background-color: #000 !important
-    border-radius: 5px !important
+section
+    padding: 40px 0 40px 0
+
+.uk-navbar-nav
+    display: none !important
 
 .navbar-sticky
     box-shadow: 0 5px 15px #1f131314
@@ -16,6 +17,7 @@
     font-size: 14px
     padding: 15px 25px 15px 25px
     background-color: #fff
+    display: none
 
 .cta-button
     display: inline-flex
@@ -45,62 +47,50 @@
         width: 100px
 
 .hero-image
+    display: none
+
+.hero-image-mobile
     position: relative
-    width: 70%
-    height: 460px
+    width: 100%
+    height: 260px
     overflow: hidden
 
     &-home-banner
         position: absolute
-        left: 200px
+        left: 60px
         width: (924.34px + 125px)
-        height: calc(417.59px + 125px)
+        height: calc(217.59px + 125px)
 
     &-front-hand
         position: absolute
-        width: 150px
+        width: 100px
         left: 50%
-        bottom: -30px
+        bottom: 0px
+        // transform: translateX(-50%)
+        margin-left: -30px
 
     &-front-elements
         position: absolute
-        width: 60%
-        left: 200px
+        width: 100%
 
     &-rear-elements
         position: absolute
-        width: 60%
-        left: 200px
+        width: 100%
         top: 50px
 
-.read-more-button
-    display: inline-flex
+.featured-engagement-head-section
+    display: flex
     flex-direction: column
 
-    &:hover a
-        text-decoration: none
-        color: #e61d1d
-
-    &:hover &-underline
-        width: 100%
-        background-color: #e61d1d
-
-    & a
-        color: #000
-        text-transform: uppercase
-        font-weight: bold
-        letter-spacing: 2px
-        margin-bottom: 5px
-
-    &-underline
-        background-color: #000
-        height: 2px
-        width: 100px
+.blog-first-post,
+.footer-section
+    display: flex
+    flex-direction: column
 
 .footer
     &-heading-text
         color: #fff
-        font-size: 35px
+        font-size: 21px
 
     &-let-connect
         display: inline-flex
@@ -108,6 +98,7 @@
 
     &-let-connect a
         color: #fff
+        font-size: 14px
         text-transform: uppercase
         font-weight: bold
         letter-spacing: 2px
@@ -126,9 +117,9 @@
     &-let-connect:hover &-let-connect-underline
         width: 100%
 
-    &-menu-explore h1,
-    &-menu-contact-us h1,
-    &-stay-in-know h1
+    &-menu-explore h4,
+    &-menu-contact-us h4,
+    &-stay-in-know h4
         font-size: 16px
         text-transform: uppercase
         font-weight: bold
@@ -150,7 +141,7 @@
             text-decoration: none
 
     &-stay-in-know-email
-        width: 460px
+        width: 100%
         position: relative
 
     &-stay-in-know input
@@ -180,3 +171,100 @@
         color: #fff
         position: absolute
         right: 0
+
+@media screen and ( min-width: 1200px )
+    section
+        padding: 50px 0 50px 0
+
+    .uk-active > a
+        width: 30px !important
+        background-color: #000 !important
+        border-radius: 5px !important
+
+    .uk-navbar-nav
+        display: block
+
+    .contact-button
+        display: block
+
+    .hero-section
+        padding: 30px
+
+    .hero-image
+        display: block
+
+    .hero-section-left
+        width: 30%
+
+        & > h1
+            font-size: 60px
+
+    .hero-image
+        position: relative
+        width: 70%
+        height: 460px
+        overflow: hidden
+
+        &-home-banner
+            position: absolute
+            left: 200px
+            width: (924.34px + 125px)
+            height: calc(417.59px + 125px)
+
+        &-front-hand
+            position: absolute
+            width: 150px
+            left: 50%
+            bottom: -30px
+
+        &-front-elements
+            position: absolute
+            width: 60%
+            left: 200px
+
+        &-rear-elements
+            position: absolute
+            width: 60%
+            left: 200px
+            top: 50px
+
+    .read-more-button
+        display: inline-flex
+        flex-direction: column
+
+        &:hover a
+            text-decoration: none
+            color: #e61d1d
+
+        &:hover &-underline
+            width: 100%
+            background-color: #e61d1d
+
+        & a
+            color: #000
+            text-transform: uppercase
+            font-weight: bold
+            letter-spacing: 2px
+            margin-bottom: 5px
+
+        &-underline
+            background-color: #000
+            height: 2px
+            width: 100px
+
+    .featured-engagement-head-section
+        flex-direction: row
+
+    .blog-first-post
+        flex-direction: row
+        height: 350px
+
+    .footer
+        &-section
+            flex-direction: row
+
+        &-heading-text
+            font-size: 35px
+
+        &-stay-in-know-email
+            width: 460px

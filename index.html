@@ -51,18 +51,41 @@
 						Contact
 						<span uk-icon="chevron-right"></span>
 					</button>
+					<span uk-icon="menu"></span>
 				</div>
 			</div>
 		</nav>
 		<main>
-			<section class="uk-container uk-flex uk-padding uk-flex-middle">
-				<div style="width: 30%">
-					<h1
-						class="uk-text-bolder uk-margin-bottom"
-						style="font-size: 60px"
-					>
+			<section class="hero-section uk-container uk-flex uk-flex-middle">
+				<div class="hero-section-left">
+					<h1 class="uk-text-bolder uk-margin-bottom">
 						We're that one agency you need.
 					</h1>
+					<div class="hero-image-mobile">
+						<img
+							src="https://www.clickrmedia.com/wp-content/uploads/2020/08/homebanner.svg"
+							alt="home banner svg"
+							class="hero-image-mobile-home-banner"
+						/>
+						<img
+							src="https://www.clickrmedia.com/wp-content/uploads/2020/08/front-hand.svg"
+							alt="front hand"
+							uk-parallax="y: 200"
+							class="hero-image-mobile-front-hand"
+						/>
+						<img
+							src="https://www.clickrmedia.com/wp-content/uploads/2020/08/front-elements.svg"
+							alt="front elements"
+							uk-parallax="y: 20"
+							class="hero-image-mobile-front-elements"
+						/>
+						<img
+							src="https://www.clickrmedia.com/wp-content/uploads/2020/08/rear-elements.svg"
+							alt="rear elements"
+							uk-parallax="y: 20"
+							class="hero-image-mobile-rear-elements"
+						/>
+					</div>
 					<p>
 						Our services cover all aspects of your digital ecosystem
 						from web design and development to online advertising,
@@ -101,136 +124,142 @@
 				</div>
 			</section>
 
-			<section class="uk-container uk-padding-large">
+			<section class="uk-container uk-padding-large@s">
 				<h2
 					class="uk-text-center uk-width-large uk-margin-auto-left uk-margin-auto-right uk-margin-large-bottom"
 				>
 					We serve every facet of digital journey.
 				</h2>
-				<div>
-					<div uk-grid>
-						<div
-							class="uk-width-1-2 uk-visible-toggle uk-card uk-card-body uk-card-hover uk-flex uk-flex-column"
-						>
-							<div class="uk-card-media-top">
-								<img
-									src="./assets/creative.png"
-									alt="creative"
-									style="
-										width: 252px;
-										height: 172px;
-										object-fit: cover;
-									"
-								/>
-							</div>
-							<h3 class="uk-text-capitilize">Creative</h3>
-							<p>
-								We provide integrated services for your
-								marketing strategy, creative production and tech
-								development solutions and work with you from the
-								start to the end of your digital ecosystem.
-							</p>
-							<div
-								class="read-more-button uk-invisible-hover uk-margin-auto-top uk-text-uppercase"
-							>
-								<a href="#">Read more</a>
-								<span class="read-more-button-underline"></span>
-							</div>
+				<!-- <div> -->
+				<div
+					uk-grid
+					class="uk-child-width-1-1 uk-child-width-1-2@s uk-margin-auto"
+				>
+					<div
+						class="uk-visible-toggle uk-card uk-card-body uk-card-hover uk-flex uk-flex-column uk-text-center uk-text-left@s"
+					>
+						<div class="uk-card-media-top">
+							<img
+								src="./assets/creative.png"
+								alt="creative"
+								style="
+									width: 252px;
+									height: 172px;
+									object-fit: cover;
+								"
+							/>
 						</div>
+						<h3 class="uk-text-capitilize">Creative</h3>
+						<p>
+							We provide integrated services for your marketing
+							strategy, creative production and tech development
+							solutions and work with you from the start to the
+							end of your digital ecosystem.
+						</p>
 						<div
-							class="uk-width-1-2 uk-visible-toggle uk-card uk-card-body uk-card-hover uk-flex uk-flex-column"
+							class="read-more-button uk-invisible-hover uk-margin-auto-top uk-text-uppercase"
 						>
-							<div class="uk-card-media-top">
-								<img
-									src="./assets/develop.png"
-									alt="develop"
-									style="
-										width: 252px;
-										height: 172px;
-										object-fit: cover;
-									"
-								/>
-							</div>
-							<h3>Develop</h3>
-							<p>
-								Full-stack web development capabilities to build
-								dynamic and interactive websites, applications
-								and e-commerce solutions.
-							</p>
-							<div
-								class="read-more-button uk-invisible-hover uk-margin-auto-top uk-text-uppercase"
-							>
-								<a href="#"> Read more </a>
-								<span class="read-more-button-underline"></span>
-							</div>
+							<a href="#">Read more</a>
+							<span class="read-more-button-underline"></span>
 						</div>
-						<div
-							class="uk-width-1-2 uk-visible-toggle uk-card-body uk-card uk-card-hover uk-flex uk-flex-column"
-						>
-							<div class="uk-card-media-top">
-								<img
-									src="./assets/marketing.png"
-									alt="marketing"
-									style="
-										width: 252px;
-										height: 172px;
-										object-fit: cover;
-									"
-								/>
-							</div>
-							<h3>Marketing</h3>
-							<p>
-								Execute effective online marketing campaigns
-								across a spectrum of paid, owned, and earned
-								media with informed decisions made through
-								real-time data analytics tools.
-							</p>
-							<div
-								class="read-more-button uk-invisible-hover uk-margin-auto-top uk-text-uppercase"
-							>
-								<a href="#"> Read more </a>
-								<span class="read-more-button-underline"></span>
-							</div>
+					</div>
+					<div
+						class="uk-visible-toggle uk-card uk-card-body uk-card-hover uk-flex uk-flex-column uk-text-center uk-text-left@s"
+					>
+						<div class="uk-card-media-top">
+							<img
+								src="./assets/develop.png"
+								alt="develop"
+								style="
+									width: 252px;
+									height: 172px;
+									object-fit: cover;
+								"
+							/>
 						</div>
+						<h3>Develop</h3>
+						<p>
+							Full-stack web development capabilities to build
+							dynamic and interactive websites, applications and
+							e-commerce solutions.
+						</p>
 						<div
-							class="uk-width-1-2 uk-visible-toggle uk-card-body uk-card uk-card-hover uk-flex uk-flex-column"
+							class="read-more-button uk-invisible-hover uk-margin-auto-top uk-text-uppercase"
 						>
-							<div class="uk-card-media-top">
-								<img
-									src="./assets/training.png"
-									alt="training"
-									style="
-										width: 252px;
-										height: 172px;
-										object-fit: cover;
-									"
-								/>
-							</div>
-							<h3>Training</h3>
-							<p>
-								Execute effective online marketing campaigns
-								across a spectrum of paid, owned, and earned
-								media with informed decisions made through
-								real-time data analytics tools.
-							</p>
-							<div
-								class="read-more-button uk-invisible-hover uk-margin-auto-top uk-text-uppercase"
-							>
-								<a href="#"> Read more </a>
-								<span class="read-more-button-underline"></span>
-							</div>
+							<a href="#"> Read more </a>
+							<span class="read-more-button-underline"></span>
+						</div>
+					</div>
+					<div
+						class="uk-visible-toggle uk-card-body uk-card uk-card-hover uk-flex uk-flex-column uk-text-center uk-text-left@s"
+					>
+						<div class="uk-card-media-top">
+							<img
+								src="./assets/marketing.png"
+								alt="marketing"
+								style="
+									width: 252px;
+									height: 172px;
+									object-fit: cover;
+								"
+							/>
+						</div>
+						<h3>Marketing</h3>
+						<p>
+							Execute effective online marketing campaigns across
+							a spectrum of paid, owned, and earned media with
+							informed decisions made through real-time data
+							analytics tools.
+						</p>
+						<div
+							class="read-more-button uk-invisible-hover uk-margin-auto-top uk-text-uppercase"
+						>
+							<a href="#"> Read more </a>
+							<span class="read-more-button-underline"></span>
+						</div>
+					</div>
+					<div
+						class="uk-visible-toggle uk-card-body uk-card uk-card-hover uk-flex uk-flex-column uk-text-center uk-text-left@s"
+					>
+						<div class="uk-card-media-top">
+							<img
+								src="./assets/training.png"
+								alt="training"
+								style="
+									width: 252px;
+									height: 172px;
+									object-fit: cover;
+								"
+							/>
+						</div>
+						<h3>Training</h3>
+						<p>
+							Execute effective online marketing campaigns across
+							a spectrum of paid, owned, and earned media with
+							informed decisions made through real-time data
+							analytics tools.
+						</p>
+						<div
+							class="read-more-button uk-invisible-hover uk-margin-auto-top uk-text-uppercase"
+						>
+							<a href="#"> Read more </a>
+							<span class="read-more-button-underline"></span>
 						</div>
 					</div>
 				</div>
+				<!-- </div> -->
 			</section>
 
-			<section class="uk-container uk-padding-large">
+			<section class="uk-container uk-padding-large@s">
 				<h2
 					class="uk-text-center uk-margin-auto-left uk-margin-auto-right uk-margin-large-bottom"
 				>
 					Some friends we've made on our journey
 				</h2>
-				<div class="uk-grid-large uk-child-width-1-6@m" uk-grid>
+				<div
+					class="uk-grid-large uk-child-width-1-3 uk-child-width-1-6@m"
+					uk-grid
+				>
 					<img
 						src="https://www.clickrmedia.com/wp-content/uploads/2023/06/client_dbs.svg"
 						alt="brand logo"
@@ -306,10 +335,12 @@
 				</div>
 			</section>
 
-			<section class="uk-container uk-padding-large">
-				<div class="uk-flex uk-flex-top uk-margin-large-bottom">
+			<section class="uk-container uk-padding-large@s">
+				<div
+					class="featured-engagement-head-section uk-flex-top uk-margin-large-bottom"
+				>
 					<h3 class="uk-margin-large-right">Featured engagements</h3>
-					<p class="uk-width-large">
+					<p class="uk-width-large uk-margin-remove">
 						Our work is a reflection of our philosophy – combining
 						great creative with data-driven insights and efficient
 						marketing that delivers business results.
@@ -321,7 +352,7 @@
 						tabindex="-1"
 					>
 						<ul
-							class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-grid"
+							class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@s uk-grid"
 						>
 							<li class="uk-card">
 								<div
@@ -496,18 +527,14 @@
 				<h2 class="uk-text-bolder">Insights from the blog</h2>
 				<div class="uk-margin-large-top uk-margin-large-bottom">
 					<div
-						class="uk-flex uk-box-shadow-hover-large"
-						style="height: 350px"
+						class="uk-box-shadow-hover-large uk-child-width-1-2@s blog-first-post"
 					>
 						<img
 							src="https://www.clickrmedia.com/wp-content/uploads/2023/06/1SQ_3953-scaled.jpg"
 							alt="blog image"
-							class="uk-width-1-2"
 							style="object-fit: cover"
 						/>
-						<div
-							class="uk-card uk-card-body uk-card-default uk-width-1-2"
-						>
+						<div class="uk-card uk-card-body uk-card-default">
 							<span class="uk-text-muted"
 								>06 JUNE 2023 - BY RICHARD GOODGER</span
 							>
@@ -517,8 +544,11 @@
 							</h3>
 						</div>
 					</div>
-					<div class="uk-grid-large uk-margin-large-top" uk-grid>
-						<div class="uk-width-1-2">
+					<div
+						class="uk-grid-large uk-margin-large-top uk-child-width-1-2@s"
+						uk-grid
+					>
+						<div>
 							<div class="uk-card uk-card-default uk-card-hover">
 								<div class="uk-card-media-top">
 									<img
@@ -541,7 +571,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="uk-width-1-2">
+						<div>
 							<div class="uk-card uk-card-default uk-card-hover">
 								<div class="uk-card-media-top">
 									<img
@@ -571,11 +601,11 @@
 
 			<footer class="uk-margin-top">
 				<div style="background-color: #262523">
-					<div class="uk-container uk-padding-large">
+					<div class="uk-container uk-padding-large@s">
 						<div
-							class="uk-flex uk-flex-between uk-flex-top uk-padding-large uk-padding-remove-horizontal uk-padding-remove-top"
+							class="uk-flex uk-flex-between uk-flex-top uk-padding-large uk-padding-remove-horizontal uk-padding-top footer-section uk-child-width-1-1 uk-child-width-1-2@s"
 						>
-							<div class="uk-width-1-2">
+							<div class="uk-margin-bottom">
 								<img
 									src="https://www.clickrmedia.com/wp-content/themes/clickrmedia/images/logo-dark.png"
 									alt="logo"
@@ -583,7 +613,7 @@
 									height="52px"
 								/>
 							</div>
-							<div class="uk-width-1-2">
+							<div>
 								<h4 class="footer-heading-text">
 									Enough about us, let’s talk about you.
 								</h4>
@@ -596,9 +626,11 @@
 							</div>
 						</div>
 						<div
-							class="uk-flex uk-flex-between uk-padding uk-padding-remove-horizontal uk-padding-remove-top"
+							class="uk-flex-between uk-padding uk-padding-remove-horizontal uk-padding-remove-top footer-section uk-child-width-1-2@s"
 						>
-							<div class="uk-width-1-2 footer-stay-in-know">
+							<div
+								class="footer-stay-in-know uk-margin-large-bottom"
+							>
 								<h4>Stay in the know</h4>
 								<div class="footer-stay-in-know-email">
 									<input
@@ -611,7 +643,7 @@
 								</div>
 							</div>
 							<div
-								class="uk-flex uk-flex-between uk-width-1-2 footer-menu"
+								class="uk-flex-between footer-menu footer-section"
 							>
 								<div class="footer-menu-explore">
 									<h4>explore</h4>
@@ -632,13 +664,15 @@
 								</div>
 							</div>
 						</div>
-						<div class="uk-flex uk-flex-between">
-							<div class="uk-width-1-2">
+						<div
+							class="uk-flex-between footer-section uk-child-width-1-2@s uk-padding uk-padding-remove-horizontal uk-padding-remove-top"
+						>
+							<div>
 								<span uk-icon="facebook"></span>
 								<span uk-icon="instagram"></span>
 								<span uk-icon="linkedin"></span>
 							</div>
-							<div class="uk-width-1-2">
+							<div>
 								<span class="uk-text-muted uk-text-left"
 									>12 Kallang Ave, #04-24 Aperia The Annex,
 									Singapore 339511</span
